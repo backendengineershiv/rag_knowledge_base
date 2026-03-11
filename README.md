@@ -67,3 +67,18 @@ POST /api/upload/
 ### Ask question
 
 POST /api/ask/
+
+
+## Run with Docker
+
+Build image:
+
+docker build -t rag-api .
+
+Run container:
+
+docker run -p 8000:8000 rag-api
+
+## Run with Docker Compose
+
+docker compose up

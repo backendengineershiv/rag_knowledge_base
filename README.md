@@ -68,7 +68,6 @@ POST /api/upload/
 
 POST /api/ask/
 
-
 ## Run with Docker
 
 Build image:
@@ -82,3 +81,34 @@ docker run -p 8000:8000 rag-api
 ## Run with Docker Compose
 
 docker compose up
+--------------------------------------------------------------------
+Pull the Docker image from Docker Hub:
+
+docker pull shivpratapraj/rag-api
+
+Run the container:
+
+docker run -p 8001:8000 --env-file .env shivpratapraj/rag-api
+
+The API will be available at:
+
+http://localhost:8001
+Also Add a Note About .env
+
+Since your project uses Azure credentials, explain this.
+
+Example:
+
+Environment Variables
+
+Create a .env file with the following variables:
+
+AZURE_OPENAI_API_KEY=your_key
+AZURE_OPENAI_ENDPOINT=your_endpoint
+
+AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-4.1
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-large
+
+AZURE_SEARCH_ENDPOINT=your_search_endpoint
+AZURE_SEARCH_KEY=your_search_key
+AZURE_SEARCH_INDEX=rag-documents

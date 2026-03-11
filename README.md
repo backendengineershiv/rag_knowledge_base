@@ -38,7 +38,7 @@ GPT-4.1 Response
 
 ### Clone repository
 
-git clone https://github.com/yourusername/rag-knowledge-base.git
+git clone git@github.com:backendengineershiv/rag_knowledge_base.git
 
 cd rag-knowledge-base
 

@@ -68,7 +68,7 @@ POST /api/upload/
 
 POST /api/ask/
 
-## Run with Docker
+## Run with Docker--------------------------------------------------
 
 Build image:
 
@@ -78,11 +78,11 @@ Run container:
 
 docker run -p 8000:8000 rag-api
 
-## Run with Docker Compose
+## Run with Docker Compose------------------------------------------
 
 docker compose up
---------------------------------------------------------------------
-Pull the Docker image from Docker Hub:
+
+## Pull the Docker image from Docker Hub:---------------------------
 
 docker pull shivpratapraj/rag-api
 
@@ -93,15 +93,9 @@ docker run -p 8001:8000 --env-file .env shivpratapraj/rag-api
 The API will be available at:
 
 http://localhost:8001
-Also Add a Note About .env
 
-Since your project uses Azure credentials, explain this.
 
-Example:
-
-Environment Variables
-
-Create a .env file with the following variables:
+## Also create .env file with the following Environment Variables
 
 AZURE_OPENAI_API_KEY=your_key
 AZURE_OPENAI_ENDPOINT=your_endpoint

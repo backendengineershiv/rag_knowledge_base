@@ -46,3 +46,4 @@ class AskQuestionView(APIView):
             "question": question,
             "answer": answer
         })
+    
